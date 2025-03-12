@@ -8,10 +8,10 @@
     tools:context=".MenuActivity">
 
     <Button
-        android:id="@+id/btnCalcuImc"
+        android:id="@+id/btnSaludApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CalcuIMC"
+        android:text="SalubApp"
 
 
         />
