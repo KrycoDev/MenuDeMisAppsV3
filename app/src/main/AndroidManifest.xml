@@ -13,26 +13,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuDeMisAppsV3"
         tools:targetApi="31">
-
+        <activity
+            android:name=".imccalculator.ImcCalculatorActivity"
+            android:exported="false" />
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
-
         <activity
             android:name=".FirstAppActivity"
-            android:exported="false" />
-
-        <!-- Esta es la actividad que será la principal de la aplicación -->
+            android:exported="false" /> <!-- Esta es la actividad que será la principal de la aplicación -->
         <activity
             android:name=".MenuActivity"
             android:exported="true">
+
             <!-- Aquí va el intent-filter correcto -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
 
 </manifest>
-

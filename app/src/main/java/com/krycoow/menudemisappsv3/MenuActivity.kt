@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.krycoow.menudemisappsv3.imccalculator.ImcCalculatorActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,11 +13,19 @@ class MenuActivity : AppCompatActivity() {
 
         // Encontrar el botón por su ID
         val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
+        val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
+
 
         // Configurar el listener para el botón
         btnSaludApp.setOnClickListener {
-            navigateToSaludApp()
-        }
+            navigateToSaludApp() }
+        btnIMCApp.setOnClickListener { navigateTOIMCApp() }
+    }
+
+    private fun navigateTOIMCApp() {
+        val intent = Intent(this, ImcCalculatorActivity::class.java)
+        startActivity(intent)
+
     }
 
     // Función para navegar a la siguiente actividad
