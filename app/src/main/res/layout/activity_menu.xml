@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:background="@color/background_app"
     android:orientation="vertical"
     tools:context=".MenuActivity">
 
@@ -24,6 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TODOApp" />
+
+    <Button
+        android:id="@+id/btnHOROSCOPE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOROSCOPEApp" />
 
 
 
